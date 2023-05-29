@@ -1,0 +1,59 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    @include nav;
+   
+    a.navbar-brand {
+        font-size: 50px;
+        padding: 5px;
+        margin: 2px;
+        animation-name: marca;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        animation-delay: 1s;
+    }
+    @keyframes marca {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+
+    ul {
+        text-decoration: none;
+
+        li {
+            list-style: none;
+
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+
+.navbar .collapse.navbar-collapse {
+    flex-grow: inherit;
+}
+
+.nav-item {
+    width: 120px;
+    font-size: 22px;
+    padding: 5px;
+    margin: 5px;    
+ 
+    .nav-link:hover {
+        transition: all 0.5s;
+        transform: scale(1.1);
+    }
+}

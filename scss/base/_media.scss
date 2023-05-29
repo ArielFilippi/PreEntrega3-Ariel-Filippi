@@ -1,0 +1,55 @@
+@mixin media ($brakpoints){
+    @media screen and (min-width : map-get($breakpoints, $breakpoints)) {
+        @content;        
+    }
+}
+
+@mixin nav {
+    @media screen and (max-width:991px) {
+        @content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        list-style: none;
+        width: 100%;
+    }
+}
+
+@mixin texto {
+    @media screen and (max-width:($lg/2+88)) {
+        @content;
+        font-size: 10px;
+        text-align: center;
+        padding: 5px;
+        margin: 2px;
+    }
+}
+
+@mixin desktop ($media : $lg) {
+    @media screen and (min-width: $media) {
+        @content; 
+        width: 20%;
+    }
+}
+
+@mixin tablet ($media : $md) {
+    @media screen and (min-width: $media) {
+        @content;
+        width: 30%;
+    }
+}
+
+@mixin mobile ($media : $sm) {
+    @media screen and (min-width: $media) {
+        @content;
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+

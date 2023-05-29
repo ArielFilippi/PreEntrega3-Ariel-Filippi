@@ -1,0 +1,268 @@
+body {
+    background: #bdc3c7;
+    background: linear-gradient(to right, #56738dd5, #bdc3c7);
+    padding: 10px;
+    margin: 30px;
+
+    h1 {
+        font-family: NovaOval-Regular;
+        font-size: 50px;
+        text-align: center;
+        color: #090909;
+        padding: 1vh;
+        margin: 10px;
+    }
+}
+
+body.index main {
+    padding: 1vh;
+    margin: 2vh;
+    min-height: auto;
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    div.descripcion {
+        text-align: center;
+        padding: 25px;
+        margin: 15px;
+
+        p {
+            font-size: 30px;
+            text-align: center;
+            padding: 2px;
+            margin: 2px;
+            @include texto;
+        }
+    }
+
+    div.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 2px;
+
+        div.tarjeta {
+            width: 30%;
+            border: 1px solid lightgray;
+            margin: 2px;
+            box-shadow: 1px 1px 4px 2px #d3d3d3d1;
+            border-radius: 15px;
+            font-family: sans-serif;
+
+            h3 {
+                text-align: center;
+                font-size: 20px;
+                padding: 5px;
+                margin: 2px;
+                @include texto;
+            }
+
+            p {
+                text-align: center;
+                padding: 2px;
+                margin: 2px;
+                @include texto;
+            }
+        }
+    }
+
+    div iframe {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.galeria main {
+    padding: 1vh;
+    margin: 2vh;
+    min-height: auto;
+
+    div.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1vh;
+
+        div.tarjeta {
+            width: 60%;
+            background-color: white;
+            border: 0.5px solid rgb(221, 164, 164);
+            margin: 2px;
+            box-shadow: 1px 1px 4px 2px #de9a9ad1;
+            border-radius: 10px;
+            @include mobile;
+            @include tablet;
+            @include desktop;
+
+            p {
+                font-size: 15px;
+                text-align: center;
+                padding: 5px;
+                margin: 2px;
+                @include texto;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 20px;
+        padding: 2vh;
+        margin: 1vh;
+    }
+
+    section {
+        padding: 5px;
+        margin: 2px;
+
+        article {
+            font-size: 15px;
+            text-align: center;
+            padding: 2px;
+            margin: 2px;
+        }
+    }
+}
+
+.compras main {
+    padding: 5px;
+    margin: 2px;
+    min-height: auto;
+
+    section {
+        padding: 5px;
+        margin: 2px;
+
+        div.container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+
+            div.tarjeta {
+                width: 60%;
+                border: 2px solid rgb(249, 243, 243);
+                margin: 10px;
+                border-radius: 5px;
+                gap: 10px;
+                @include mobile;
+                @include tablet;
+                @include desktop;
+
+                img {
+                    width: 280px;
+                    height: 300px;
+
+                    .card-img-top {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                a {
+                    padding: 5px;
+                    margin: 2px;
+
+                    img.pequeña {
+                        height: 30px;
+                        width: 50px;
+                        padding: 2px;
+                        margin: 2px;
+                    }
+
+                }
+            }
+
+            p {
+                padding: 5px;
+                margin: 2px;
+                @include texto;
+            }
+        }
+    }
+}
+
+.instructivos main {
+    min-height: calc(100vh - 100px - 300px);
+    padding: 2vh;
+    margin: 1vh;
+
+    h2 {
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    section {
+        padding: 5px;
+        margin: 2px;
+
+        div.carousel-inner {
+            padding: 2px;
+            margin: 1px;
+            align-content: center;
+
+            div.carousel-item {
+                padding: 2px;
+                margin: 1px;
+
+                article {
+                    :is(.martillo, .destornillador, .sierra, .taladro, .cierra-circular, .lijadora) {
+                        margin: 20px 10px;
+                        text-align: center;
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+
+                    h2 {
+                        padding: 5px;
+                        margin: 2px;
+                        text-align: center;
+                    }
+
+                    p {
+                        padding: 5px;
+                        margin: 2px;
+                        text-align: center;
+                    }
+
+                    ul {
+                        padding: 5px;
+                        margin: 2px;
+                        list-style: none;
+
+                        li {
+                            padding: 5px;
+                            margin: 2px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cont main {
+    padding: 10px;
+    margin: 5px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        padding: 30px;
+        margin: 20px;
+    }
+}
