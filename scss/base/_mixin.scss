@@ -25,6 +25,16 @@
     }
 }
 
+@mixin titulo {
+    @media screen and (max-width:600px) {
+        @content;
+        font-size: 30px;
+        text-align: center;
+        padding: 5px;
+        margin: 2px;
+    }
+}
+
 @mixin desktop ($media : $lg) {
     @media screen and (min-width: $media) {
         @content; 

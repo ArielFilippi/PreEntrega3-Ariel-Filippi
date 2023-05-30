@@ -2,15 +2,16 @@ body {
     background: #bdc3c7;
     background: linear-gradient(to right, #56738dd5, #bdc3c7);
     padding: 10px;
-    margin: 30px;
+    margin: 5px;
 
     h1 {
         font-family: NovaOval-Regular;
-        font-size: 50px;
+        font-size: 35px;
         text-align: center;
         color: #090909;
-        padding: 1vh;
-        margin: 10px;
+        padding: 10px;
+        margin: 5px;
+        @include titulo
     }
 }
 
@@ -21,18 +22,18 @@ body.index main {
 
     h2 {
         text-align: center;
-        font-size: 30px;
-        padding: 20px;
-        margin: 15px;
+        font-size: 25px;
+        padding: 10px;
+        margin: 5px;
     }
 
     div.descripcion {
         text-align: center;
-        padding: 25px;
-        margin: 15px;
+        padding: 10px;
+        margin: 5px;
 
         p {
-            font-size: 30px;
+            font-size: 20px;
             text-align: center;
             padding: 2px;
             margin: 2px;
@@ -52,12 +53,12 @@ body.index main {
             border: 1px solid lightgray;
             margin: 2px;
             box-shadow: 1px 1px 4px 2px #d3d3d3d1;
-            border-radius: 15px;
+            border-radius: 10px;
             font-family: sans-serif;
 
             h3 {
                 text-align: center;
-                font-size: 20px;
+                font-size: 15px;
                 padding: 5px;
                 margin: 2px;
                 @include texto;
@@ -65,11 +66,17 @@ body.index main {
 
             p {
                 text-align: center;
+                font-size: 15px;
                 padding: 2px;
                 margin: 2px;
                 @include texto;
             }
         }
+    }
+    h2 {
+        text-align: center;
+        font-size: 20px;
+        @include texto
     }
 
     div iframe {
@@ -86,9 +93,10 @@ body.index main {
     div.container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         padding: 1vh;
+        gap: 30px;
 
         div.tarjeta {
             width: 60%;
@@ -123,10 +131,11 @@ body.index main {
         margin: 2px;
 
         article {
-            font-size: 15px;
+            font-size: 20px;
             text-align: center;
             padding: 2px;
             margin: 2px;
+            @include texto
         }
     }
 }
@@ -213,10 +222,11 @@ body.index main {
             div.carousel-item {
                 padding: 2px;
                 margin: 1px;
+                justify-content: center;
 
                 article {
                     :is(.martillo, .destornillador, .sierra, .taladro, .cierra-circular, .lijadora) {
-                        margin: 20px 10px;
+                        margin: 10px 5px;
                         text-align: center;
                         border-radius: 10px;
                         width: 100%;
