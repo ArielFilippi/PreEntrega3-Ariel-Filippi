@@ -56,10 +56,18 @@ nav ul li:hover {
 }
 
 .nav-item {
-  width: 120px;
-  font-size: 22px;
+  width: 100px;
+  font-size: 18px;
   padding: 5px;
   margin: 5px;
+}
+@media screen and (max-width: 600px) {
+  .nav-item {
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 2px;
+  }
 }
 .nav-item .nav-link:hover {
   transition: all 0.5s;
@@ -372,6 +380,18 @@ body.index main div iframe {
   padding: 5px;
   margin: 2px;
   text-align: center;
+}
+.instructivos main div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.instructivos main div.container iframe {
+  padding: 10px;
+  margin: 5px;
+  gap: 10px;
 }
 
 .cont main {

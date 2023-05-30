@@ -47,10 +47,11 @@ nav {
 }
 
 .nav-item {
-    width: 120px;
-    font-size: 22px;
+    width: 100px;
+    font-size: 18px;
     padding: 5px;
-    margin: 5px;    
+    margin: 5px;
+    @include texto;   
  
     .nav-link:hover {
         transition: all 0.5s;
