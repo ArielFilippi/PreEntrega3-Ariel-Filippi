@@ -1,7 +1,8 @@
-@mixin media ($brakpoints){
-    @media screen and (min-width : map-get($breakpoints, $breakpoints)) {
-        @content;        
-    }
+@mixin body {
+    background-color: #bdc3c7;
+    background-color: $bg-color;
+    padding: 10px;
+    margin: 5px;
 }
 
 @mixin nav {
@@ -18,7 +19,7 @@
 @mixin texto {
     @media screen and (max-width:600px) {
         @content;
-        font-size: 10px;
+        font-size: map-get($font-size, f-sm);
         text-align: center;
         padding: 5px;
         margin: 2px;
@@ -28,7 +29,7 @@
 @mixin titulo {
     @media screen and (max-width:600px) {
         @content;
-        font-size: 30px;
+        font-size: map-get($font-size, f-xl);
         text-align: center;
         padding: 5px;
         margin: 2px;

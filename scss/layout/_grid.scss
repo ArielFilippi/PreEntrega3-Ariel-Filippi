@@ -1,23 +1,22 @@
 body {
-    background: #bdc3c7;
-    background: linear-gradient(to right, #56738dd5, #bdc3c7);
-    padding: 10px;
-    margin: 5px;
+    @include body;
+
 
     h1 {
         font-family: NovaOval-Regular;
         font-size: 35px;
         text-align: center;
-        color: #090909;
+        color: $color-primary;
         padding: 10px;
         margin: 5px;
-        @include titulo
+        @include titulo;
     }
 }
 
 body.index main {
     padding: 1vh;
-    margin: 2vh;
+    margin: auto;
+    max-width: 1200px;
     min-height: auto;
 
     h2 {
@@ -88,7 +87,8 @@ body.index main {
 
 .galeria main {
     padding: 1vh;
-    margin: 2vh;
+    margin: auto;
+    max-width: 1200px;
     min-height: auto;
 
     div.container {
@@ -143,7 +143,8 @@ body.index main {
 
 .compras main {
     padding: 5px;
-    margin: 2px;
+    margin: auto;
+    max-width: 1200px;
     min-height: auto;
 
     section {
@@ -203,7 +204,8 @@ body.index main {
 .instructivos main {
     min-height: calc(100vh - 100px - 300px);
     padding: 2vh;
-    margin: 1vh;
+    margin: auto;
+    max-width: 1200px;
 
     h2 {
         text-align: center;
@@ -279,7 +281,8 @@ body.index main {
 
 .cont main {
     padding: 10px;
-    margin: 5px;
+    margin: auto;
+    max-width: 1200px;
 
     form {
         display: flex;

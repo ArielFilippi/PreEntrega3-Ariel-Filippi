@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: NovaOval-Regular;
+  src: url(../font/Nova_Oval/NovaOval-Regular.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -75,8 +79,8 @@ nav ul li:hover {
 }
 
 body {
-  background: #bdc3c7;
-  background: linear-gradient(to right, rgba(86, 115, 141, 0.8352941176), #bdc3c7);
+  background-color: #bdc3c7;
+  background-color: linear-gradient(to right, rgba(86, 115, 141, 0.8352941176), #bdc3c7);
   padding: 10px;
   margin: 5px;
 }
@@ -84,13 +88,13 @@ body h1 {
   font-family: NovaOval-Regular;
   font-size: 35px;
   text-align: center;
-  color: #090909;
+  color: black;
   padding: 10px;
   margin: 5px;
 }
 @media screen and (max-width: 600px) {
   body h1 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 5px;
     margin: 2px;
@@ -99,7 +103,8 @@ body h1 {
 
 body.index main {
   padding: 1vh;
-  margin: 2vh;
+  margin: auto;
+  max-width: 1200px;
   min-height: auto;
 }
 body.index main h2 {
@@ -189,7 +194,8 @@ body.index main div iframe {
 
 .galeria main {
   padding: 1vh;
-  margin: 2vh;
+  margin: auto;
+  max-width: 1200px;
   min-height: auto;
 }
 .galeria main div.container {
@@ -264,7 +270,8 @@ body.index main div iframe {
 
 .compras main {
   padding: 5px;
-  margin: 2px;
+  margin: auto;
+  max-width: 1200px;
   min-height: auto;
 }
 .compras main section {
@@ -334,7 +341,8 @@ body.index main div iframe {
 .instructivos main {
   min-height: calc(100vh - 100px - 300px);
   padding: 2vh;
-  margin: 1vh;
+  margin: auto;
+  max-width: 1200px;
 }
 .instructivos main h2 {
   text-align: center;
@@ -396,7 +404,8 @@ body.index main div iframe {
 
 .cont main {
   padding: 10px;
-  margin: 5px;
+  margin: auto;
+  max-width: 1200px;
 }
 .cont main form {
   display: flex;
@@ -445,11 +454,6 @@ footer p {
 
 body footer p {
   text-align: center;
-}
-
-@font-face {
-  font-family: NovaOval-Regular;
-  src: url(../font/Nova_Oval/NovaOval-Regular.ttf);
 }
 
 /*# sourceMappingURL=main.css.map */
