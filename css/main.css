@@ -46,6 +46,7 @@ nav a.navbar-brand {
 }
 nav ul {
   text-decoration: none;
+  align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -216,7 +217,7 @@ body.index main div iframe {
 }
 @media screen and (min-width: 480px) {
   .galeria main div.container div.tarjeta {
-    width: 40%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -271,8 +272,7 @@ body.index main div iframe {
 .compras main {
   padding: 5px;
   margin: auto;
-  max-width: 1200px;
-  min-height: auto;
+  max-width: 1000px;
 }
 .compras main section {
   padding: 5px;
@@ -286,34 +286,26 @@ body.index main div iframe {
   padding: 10px;
 }
 .compras main section div.container div.tarjeta {
-  width: 60%;
+  width: 200px;
+  height: 500px;
   border: 2px solid rgb(249, 243, 243);
   margin: 10px;
   border-radius: 5px;
   gap: 10px;
 }
-@media screen and (min-width: 480px) {
-  .compras main section div.container div.tarjeta {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .compras main section div.container div.tarjeta {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .compras main section div.container div.tarjeta {
-    width: 20%;
-  }
-}
 .compras main section div.container div.tarjeta img {
-  width: 280px;
+  width: auto;
   height: 300px;
 }
 .compras main section div.container div.tarjeta img .card-img-top {
   width: 100%;
   object-fit: cover;
+}
+.compras main section div.container div.tarjeta p {
+  width: 200px;
+  height: 90px;
+  padding: 5px;
+  margin: 2px;
 }
 .compras main section div.container div.tarjeta a {
   padding: 5px;
@@ -323,19 +315,7 @@ body.index main div iframe {
   height: 30px;
   width: 50px;
   padding: 2px;
-  margin: 2px;
-}
-.compras main section div.container p {
-  padding: 5px;
-  margin: 2px;
-}
-@media screen and (max-width: 600px) {
-  .compras main section div.container p {
-    font-size: 10px;
-    text-align: center;
-    padding: 5px;
-    margin: 2px;
-  }
+  margin-top: 60px;
 }
 
 .instructivos main {
