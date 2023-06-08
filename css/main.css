@@ -406,8 +406,11 @@ body.index main div iframe {
   padding: 10px;
 }
 .instructivos main div.container iframe {
+  width: 500px;
+  height: 250px;
   padding: 10px;
   margin: 5px;
+  border-radius: 20px;
   gap: 10px;
 }
 
