@@ -1,7 +1,7 @@
 @mixin body {
-    background-color: #bdc3c7;
-    background-color: $bg-color;
-    padding: 10px;
+    background: #005AA7;  
+    background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7); 
+    background: linear-gradient(to bottom, #FFFDE4, #005AA7); 
     margin: 5px;
 }
 
