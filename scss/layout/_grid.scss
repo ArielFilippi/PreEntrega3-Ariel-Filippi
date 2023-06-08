@@ -54,6 +54,9 @@ body.index main {
             box-shadow: 1px 1px 4px 2px grey;
             border-radius: 10px;
             font-family: sans-serif;
+            background: #E0EAFC;
+            background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);
+            background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);
 
             img {
                 border-radius: 10px;
@@ -225,74 +228,70 @@ body.index main {
         margin: 5px;
     }
 
-    section {
-        padding: 5px;
-        margin: 2px;
+    div.carousel-inner {
+        padding: 2px;
+        margin: 1px;
+        align-content: center;
 
-        div.carousel-inner {
+        div.carousel-item {
             padding: 2px;
             margin: 1px;
-            align-content: center;
+            justify-content: center;
 
-            div.carousel-item {
-                padding: 2px;
-                margin: 1px;
-                justify-content: center;
+            article {
+                :is(.martillo, .destornillador, .sierra, .taladro, .cierra-circular, .lijadora) {
+                    margin: 10px 5px;
+                    text-align: center;
+                    border-radius: 10px;
+                    width: 100%;
+                }
 
-                article {
-                    :is(.martillo, .destornillador, .sierra, .taladro, .cierra-circular, .lijadora) {
-                        margin: 10px 5px;
-                        text-align: center;
-                        border-radius: 10px;
-                        width: 100%;
-                    }
+                h2 {
+                    padding: 5px;
+                    margin: 2px;
+                    text-align: center;
+                }
 
-                    h2 {
+                p {
+                    padding: 5px;
+                    margin: 2px;
+                    text-align: center;
+                }
+
+                ul {
+                    padding: 5px;
+                    margin: 2px;
+                    list-style: none;
+
+                    li {
                         padding: 5px;
                         margin: 2px;
                         text-align: center;
-                    }
-
-                    p {
-                        padding: 5px;
-                        margin: 2px;
-                        text-align: center;
-                    }
-
-                    ul {
-                        padding: 5px;
-                        margin: 2px;
-                        list-style: none;
-
-                        li {
-                            padding: 5px;
-                            margin: 2px;
-                            text-align: center;
-                        }
                     }
                 }
             }
         }
     }
-
-    div.container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 10px;
-
-        iframe {
-            width: 500px;
-            height: 250px;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 20px;
-            gap: 10px;
-        }
-
-    }
 }
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    iframe {
+        width: 500px;
+        height: 250px;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 20px;
+        gap: 10px;
+    }
+
+}
+
 
 .cont main {
     padding: 10px;

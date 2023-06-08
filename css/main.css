@@ -166,6 +166,9 @@ body.index main div.container div.tarjeta {
   box-shadow: 1px 1px 4px 2px grey;
   border-radius: 10px;
   font-family: sans-serif;
+  background: #E0EAFC;
+  background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);
+  background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);
 }
 body.index main div.container div.tarjeta img {
   border-radius: 10px;
@@ -358,54 +361,51 @@ body.index main div iframe {
   padding: 10px;
   margin: 5px;
 }
-.instructivos main section {
-  padding: 5px;
-  margin: 2px;
-}
-.instructivos main section div.carousel-inner {
+.instructivos main div.carousel-inner {
   padding: 2px;
   margin: 1px;
   align-content: center;
 }
-.instructivos main section div.carousel-inner div.carousel-item {
+.instructivos main div.carousel-inner div.carousel-item {
   padding: 2px;
   margin: 1px;
   justify-content: center;
 }
-.instructivos main section div.carousel-inner div.carousel-item article :is(.martillo, .destornillador, .sierra, .taladro, .cierra-circular, .lijadora) {
+.instructivos main div.carousel-inner div.carousel-item article :is(.martillo, .destornillador, .sierra, .taladro, .cierra-circular, .lijadora) {
   margin: 10px 5px;
   text-align: center;
   border-radius: 10px;
   width: 100%;
 }
-.instructivos main section div.carousel-inner div.carousel-item article h2 {
+.instructivos main div.carousel-inner div.carousel-item article h2 {
   padding: 5px;
   margin: 2px;
   text-align: center;
 }
-.instructivos main section div.carousel-inner div.carousel-item article p {
+.instructivos main div.carousel-inner div.carousel-item article p {
   padding: 5px;
   margin: 2px;
   text-align: center;
 }
-.instructivos main section div.carousel-inner div.carousel-item article ul {
+.instructivos main div.carousel-inner div.carousel-item article ul {
   padding: 5px;
   margin: 2px;
   list-style: none;
 }
-.instructivos main section div.carousel-inner div.carousel-item article ul li {
+.instructivos main div.carousel-inner div.carousel-item article ul li {
   padding: 5px;
   margin: 2px;
   text-align: center;
 }
-.instructivos main div.container {
+
+div.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
 }
-.instructivos main div.container iframe {
+div.container iframe {
   width: 500px;
   height: 250px;
   padding: 10px;
@@ -449,16 +449,14 @@ footer section ul {
 }
 footer section ul li {
   text-align: center;
-  width: 20px;
-  height: 20px;
-  margin: 25px;
+  margin: 20px;
+}
+footer section ul li img {
+  width: 30px;
+  height: 30px;
 }
 footer section ul li:hover {
   transform: scale(1.3);
-}
-footer section ul li:hover a.pequeña {
-  padding: 10px;
-  margin: 5px;
 }
 footer p {
   text-align: center;
