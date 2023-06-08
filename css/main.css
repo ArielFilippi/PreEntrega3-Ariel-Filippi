@@ -75,24 +75,24 @@ nav ul li:hover {
   flex-grow: inherit;
 }
 
-.navbar-nav .nav-item {
+.nav-item {
   width: 100px;
   font-size: 18px;
   padding: 2px;
   margin: 25px;
 }
 @media screen and (max-width: 600px) {
-  .navbar-nav .nav-item {
+  .nav-item {
     font-size: 10px;
     text-align: center;
     padding: 5px;
     margin: 2px;
   }
 }
-.navbar-nav .nav-item .nav-link {
+.nav-item .nav-link {
   color: rgb(44, 70, 151);
 }
-.navbar-nav .nav-item .nav-link:hover {
+.nav-item .nav-link:hover {
   color: black;
   transition: all 0.5s;
   transform: scale(1.1);
