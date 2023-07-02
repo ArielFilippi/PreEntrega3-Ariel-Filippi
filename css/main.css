@@ -335,19 +335,62 @@ body.index main div iframe {
 }
 .compras main section div.container div.tarjeta p {
   width: 200px;
-  height: 90px;
+  height: 60px;
+  padding: 5px;
+  margin: 10px;
+}
+.compras main section div.container div.tarjeta .quantity {
+  display: flex;
+  align-items: center;
+}
+.compras main section div.container div.tarjeta .quantity a {
   padding: 5px;
   margin: 2px;
 }
-.compras main section div.container div.tarjeta a {
-  padding: 5px;
-  margin: 2px;
-}
-.compras main section div.container div.tarjeta a img.pequeña {
+.compras main section div.container div.tarjeta .quantity a img.pequeña {
   height: 30px;
   width: 50px;
   padding: 2px;
-  margin-top: 60px;
+  margin-top: 2px;
+}
+.compras main section div.container div.tarjeta .quantity input {
+  text-align: center;
+  height: 30px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+.compras main section div.container div.tarjeta .quantity button {
+  border-radius: 5px;
+  height: 30px;
+  width: 20px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.compras main section div.container div.tarjeta .quantity input[type=number]::-webkit-inner-spin-button,
+.compras main section div.container div.tarjeta .quantity input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.compras main section div.container div.tarjeta .quantity input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#payment-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+#payment-section #payment-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+#payment-section #payment-form input {
+  margin-bottom: 10px;
+}
+#payment-section #payment-form button {
+  padding: 10px;
 }
 
 .instructivos main {
